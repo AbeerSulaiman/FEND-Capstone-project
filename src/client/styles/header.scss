@@ -1,0 +1,72 @@
+.title {
+    padding: 10px;
+    font-size: 17px;
+    font-size: large;
+    font-weight: bolder;
+}
+
+h1 {
+    text-align: center;
+    width: 700px;
+    margin-left: 60px;
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav a:hover {
+    color: #36332f
+}
+
+
+/* Button and text features */
+
+.btn {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #ffff;
+    border: none;
+    color: black;
+    text-align: center;
+    transition: 0.3s;
+    width: 150px;
+    height: 40px;
+    align-items: center;
+    border-radius: 16px;
+  }
+  .btn:hover {
+    background-color: #749dbb;
+    color: white;
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+}
+.semiTitle {
+    font-size: 12px;
+}
+
+#box-text {
+    font-size: 14px;
+    color: grey;
+}
+
+
+/* display  */
+
+@media screen and (max-width: 380px) {
+    h1 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 381px) and (max-width:768px) {
+    h1 {
+        font-size: 35px;
+    }
+}

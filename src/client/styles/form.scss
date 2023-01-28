@@ -1,0 +1,34 @@
+// form {
+//     border: 1px solid #545454;
+//     border-radius: 3px;
+//     padding: 40px;
+// }
+.input-box {
+    padding: 15px;
+    border-radius: 16px;
+    border: none;
+    width: 100%;
+    line-height: 16px;
+    margin: 10px 0;
+}
+
+.textblock {
+    text-align: center;
+    margin: 40px;
+    border-radius: 5px;
+    font-size: large;
+}
+
+.gallary {
+    display: grid;
+    padding: 10px;
+    gap: 10px;
+    grid-template-columns: repeat(2, 200px);
+    justify-content: center;
+}
+
+.image {
+    height: 200px;
+    width: 290px;
+    object-fit: cover;
+}

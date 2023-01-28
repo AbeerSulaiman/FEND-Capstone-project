@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>TRAVELINIA</title>
+
+</head>
+
+<body class="container">
+
+    <header>
+
+        <div class="title">
+             TRAVELINIA - THE TRAVEL APP ✈️
+        </div>
+        <div class="semiTitle">
+            Descover Your Trip With Us
+        </div>
+    </header>
+
+
+    <section class="form-content">
+        <form onsubmit="return Client.handleSubmit(event)">
+            <label for="city">Going To: </label>
+            <input type="text" class="input-box" name="location" id="user-location" placeholder="Enter Location" />
+            <div>
+                <span> 
+                        <label for="start-date">Departing Date: </label>
+                        <input class="input-box" type="date" name="date" id="start-date" placeholder="MM/DD/YYYY"  />
+                    </span>
+                <span>
+                    <label for="end-date">Returning Date: </label>
+                        <input class="input-box"   type="date"  name="date" id="end-date" placeholder="MM/DD/YYYY"  />
+                    </span>
+            </div>
+
+            <button class="btn" id="add" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">Show result</button>
+            <!-- <input class="btn" type="submit" name="" value="Show result" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)"> -->
+        </form>
+    </section>
+    <section class="result-content textblock">
+        <div>
+
+            <strong><h2>Information about your trip :</h2></strong>
+            <br>
+            <div id="results">
+                <!-- <p id="days"></p>
+                <p id="city"></p>
+                <p id="wether">
+                </p> -->
+                <br> <br>
+            </div class="gallary">
+            <div id="images">
+            </div>
+            </div>
+    </section>
+
+
+    <footer>
+        <p>Made with <span class="heart">♥</span> by Abeer Albawardi</p>
+    </footer>
+
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script>
+</body>
+
+</html>
