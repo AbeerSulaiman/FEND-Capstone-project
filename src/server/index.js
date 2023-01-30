@@ -89,6 +89,7 @@ async function getWeatherbit(date, start_date, end_date) {
   let url = "";
   console.log(projectData.coords.countryCode);
   if (date >= 7) {
+    console.log(date);
     url = `https://api.weatherbit.io/v2.0/forecast/daily?city=${projectData.input.location}&country=${projectData.coords.countryCode}&lat=${projectData.coords.lat}&lon=${projectData.coords.lng}&key=${WEATHERBIT_KEY}`;
   } else {
     url = `https://api.weatherbit.io/v2.0/current?city=${projectData.input.location}&country=${projectData.coords.countryCode}&lat=${projectData.coords.lat}&lon=${projectData.coords.lng}&key=${WEATHERBIT_KEY}`;
