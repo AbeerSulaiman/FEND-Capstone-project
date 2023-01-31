@@ -1,4 +1,4 @@
-import { getPixabay, weatherbitAPI, geoNamesAPI } from "../src/server/index.js"
+import { getPixabay, getWeatherbit, getGeonames } from "../server/index.js"
 
 describe('testing if the pixabayAPI is valid or not', () => {
     test("the function return  true if valid", () => {

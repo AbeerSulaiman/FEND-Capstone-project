@@ -138,4 +138,4 @@ async function getPixabay(location) {
 }
 
 //To do test for the server remove the comments
-module.exports = { getPixabay, getWeatherbit, getGeonames };
+module.export = { getPixabay, getWeatherbit, getGeonames };

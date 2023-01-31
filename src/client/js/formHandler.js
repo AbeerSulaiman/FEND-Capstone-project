@@ -63,29 +63,5 @@ function postData(url = "", data = {}) {
     ).innerHTML = ` <img src="${res.pics.picture}" alt="" class="image"> <br>`;
   })
 }
-// function updateUI() {
-//   console.log("Update UI  Begins");
-//   fetch(`${Url}/data`, { method: "GET" })
-//     .then((res) => {
-//       return res.json();
-//     })
-//     .then((res) => {
-//       //console.log(res);
-//       document.getElementById(
-//         "days"
-//       ).innerHTML = ` You are going to have ${res.input.length} days trip`;
-//       document.getElementById(
-//         "city"
-//       ).innerHTML = ` The destination is:  ${res.input.location} , ${res.coords.country}`;
-//       document.getElementById(
-//         "weather"
-//       ).innerHTML = ` The weather is ${res.forecast.wether_desc} the tempreture is ${res.forecast.temp} `;
-//       document.getElementById(
-//         "images"
-//       ).innerHTML = ` <img src="${res.pics.picture}" alt="" class="image"> <br>`;
-//     })
-//     .catch((error) => {
-//       console.log(error);
-//     });
-// }
-export { handleSubmit };
+
+module.export = { handleSubmit };

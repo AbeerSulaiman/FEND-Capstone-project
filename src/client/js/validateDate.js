@@ -22,4 +22,4 @@ function validateDate() {
     });
 }
 
-// export { validateDate }
+module.export = { validateDate };
